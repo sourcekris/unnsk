@@ -75,7 +75,7 @@ func main() {
 		errpanic(err)
 
 		if !reflect.DeepEqual(h.id, fileID) {
-			fmt.Fprintf(os.Stderr, "file is not a %s file: %v", ext, err)
+			fmt.Fprintf(os.Stderr, "file is not a %s file", ext)
 			os.Exit(1)
 		}
 
